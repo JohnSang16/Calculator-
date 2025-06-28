@@ -47,13 +47,22 @@ body{
 }
 
 .box{
+    cursor: pointer;
+    user-select: none;
     border-radius: 10px;
     flex: 1 0 20%;
-    background: white;
+    background: rgb(209, 116, 116);
+    color: white;
     border: 1px solid black;
     margin: 2px;
     display:flex;
     justify-content: center;
     align-items: center;
-
+    transition: background 0.2s ease;
+    font-size: 1.5rem;
 }
+
+.box:hover {
+  background: #666;
+}
+

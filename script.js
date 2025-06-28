@@ -1,12 +1,15 @@
 const display = document.querySelector(".display");
+const boxes = document.querySelectorAll(".box");
+boxes.forEach((box)=>{
+    const id = box.dataset.id;
+    console.log(`Box ${id}: ${box.textContent}`)
+});
 
-let boxes = [];
-for(let i = 1; i <= 18; i++){
-    const box = document.querySelector(`.box.${i}`)
-    boxes.push(box);
+
+for(let i = 1; i<= 18; i++){
+    
+
 }
-
-
 
 
 
