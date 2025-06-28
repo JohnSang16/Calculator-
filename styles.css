@@ -74,3 +74,24 @@ body{
 }
 
 
+.box[data-id="1"] {
+  background-color: rgb(250, 221, 95);
+}
+.box[data-id="2"] {
+  background-color: rgb(250, 221, 95);
+}
+.box[data-id="3"] {
+  background-color: rgb(250, 123, 65);
+}
+.box[data-id="4"] {
+  background-color: rgb(250, 123, 65);
+}
+.box[data-id="8"] {
+  background-color: rgb(250, 123, 65);
+}
+.box[data-id="12"] {
+  background-color: rgb(250, 123, 65);
+}
+.box[data-id="16"] {
+  background-color: rgb(66, 238, 137);
+}
