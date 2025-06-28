@@ -1,4 +1,5 @@
 body{
+    background-color: #ff7e5f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,11 +11,13 @@ body{
     width: 90%;
     max-width: 400px;
     height: 80vh;
-    background: rgb(103, 68, 202);
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -22,8 +25,8 @@ body{
     height: 25%;
     width: 95%;
     border-radius: 10px;
-    background: white;
-    border: 3px solid black;
+    background: #ec917a;
+    border: 1px solid black;
     margin: 10px;
     margin-top: 7%;
     display: flex;
@@ -32,6 +35,9 @@ body{
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 1%;
+    color:white;
+    font-size: 1.5rem;
+
     
 }
 
@@ -66,4 +72,5 @@ body{
 .box:hover {
   background: #666;
 }
+
 
