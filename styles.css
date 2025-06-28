@@ -10,7 +10,7 @@ body{
     width: 90%;
     max-width: 400px;
     height: 80vh;
-    background: red;
+    background: rgb(103, 68, 202);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -23,13 +23,15 @@ body{
     width: 95%;
     border-radius: 10px;
     background: white;
-    border: 5px solid black;
+    border: 3px solid black;
     margin: 10px;
-    margin-top: 30px;
+    margin-top: 7%;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
+    margin-bottom: 1%;
     
 }
 
@@ -39,17 +41,19 @@ body{
     flex-wrap: wrap;
     height: 100%;
     width: 93%;
-    background: white;
-    border: 5px solid black;
     margin: 10px;
+    margin-top: 0;
  
 }
 
 .box{
     border-radius: 10px;
-    flex: 1 0 25%;
+    flex: 1 0 20%;
     background: white;
     border: 1px solid black;
     margin: 2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 }

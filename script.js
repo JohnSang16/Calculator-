@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+//functions
 function add(a, b){
     return a + b;
 };
@@ -35,4 +47,3 @@ let num1 = 5;
 let num2 = 10;
 let op = '*';
 
-console.log(operate(num1, num2, op))
