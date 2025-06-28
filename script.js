@@ -3,13 +3,29 @@ const boxes = document.querySelectorAll(".box");
 boxes.forEach((box)=>{
     const id = box.dataset.id;
     console.log(`Box ${id}: ${box.textContent}`)
+
+    box.addEventListener("click",function(){
+    const value = box.textContent;
+    
+    if(value === "AC"){
+        display.textContent = "";
+    }
+    else if(value=== "DEL"){
+        display.textContent = display.textContent.slice(0, -1);
+    }
+    else if(value === "="){
+        operator()
+    }
+    else{
+        display.textContent += value;
+    }
+});
+
 });
 
 
-for(let i = 1; i<= 18; i++){
-    
 
-}
+
 
 
 
