@@ -14,7 +14,20 @@ boxes.forEach((box)=>{
         display.textContent = display.textContent.slice(0, -1);
     }
     else if(value === "="){
-        operator()
+        const expression = display.textContent;
+        const operatorMatch = expression.match(/[\+\-\*\/]/);
+        if (!operatorMatch) return;
+        
+        const operator = operatorMatch[0];
+        const[a, b] = expression.split(operator);
+
+        const result = operate(Number(a), operator, Number(b))
+        display.textContent = result;
+    }
+    else if(value === "."){
+         const lastNumber = display.textContent.split(/[\+\-\*\/]/).pop();
+        if (lastNumber.includes(".")) return; 
+        display.textContent += value;
     }
     else{
         display.textContent += value;
@@ -51,7 +64,8 @@ function divide(a, b){
 };
 
 
-function operate(a, b, operator){
+
+function operate(a, operator, b){
     switch(operator){
         case '+':
         return add(a, b);
@@ -66,8 +80,4 @@ function operate(a, b, operator){
     }
 
 }
-
-let num1 = 5;
-let num2 = 10;
-let op = '*';
 
