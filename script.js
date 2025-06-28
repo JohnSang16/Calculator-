@@ -15,18 +15,24 @@ function divide(a, b){
 };
 
 
-function operate(a, b, operater){
+function operate(a, b, operator){
     switch(operator){
-        case: '+':
+        case '+':
         return add(a, b);
-        case: '-':
+        case '-':
         return subtract(a, b);
-        case: '*':
+        case '*':
         return multiply(a, b);
-        case: '/':
+        case '/':
         return divide(a, b);
         default:
             return "invalid operator";
     }
 
 }
+
+let num1 = 5;
+let num2 = 10;
+let op = '*';
+
+console.log(operate(num1, num2, op))
