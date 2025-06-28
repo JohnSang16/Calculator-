@@ -1,5 +1,10 @@
+const display = document.querySelector(".display");
 
-
+let boxes = [];
+for(let i = 1; i <= 18; i++){
+    const box = document.querySelector(`.box.${i}`)
+    boxes.push(box);
+}
 
 
 
